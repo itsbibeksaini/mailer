@@ -36,6 +36,15 @@ export class FakeDataProviderService {
       if(this.MENU_SELECTED == "inbox"){
         this.fakeDataBehaviour.next(data.getInboxData());
       }
+      if(this.MENU_SELECTED == "sent"){
+        this.fakeDataBehaviour.next(data.getSentData());
+      }
+      if(this.MENU_SELECTED == "draft"){
+        this.fakeDataBehaviour.next(data.getDraftData());
+      }
+      if(this.MENU_SELECTED == "trash"){
+        this.fakeDataBehaviour.next(data.getTrashData());
+      }
     }
   }
 

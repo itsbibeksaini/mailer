@@ -13,12 +13,12 @@ export class ListComponent implements OnInit {
   dataCount = 0;
 
   constructor(private dataProvider: FakeDataProviderService) {         
-    dataProvider.getData().subscribe(data => {      
-      this.data = data;
-      this.dataCount = data.length;
+    dataProvider.getData().subscribe(data => {          
+      if(data!==null){
+        this.data = data;
+        this.dataCount = data.length;
+      }      
     });
-
-    
   }
 
   ngOnInit(): void {
