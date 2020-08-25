@@ -7,10 +7,11 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarOptionSelectorDirective } from './directives/sidebar-option-selector/sidebar-option-selector.directive';
 import { ListComponent } from './list/list.component';
+import { ContentCanvasComponent } from './content-canvas/content-canvas.component';
 
 
 @NgModule({
-  declarations: [MainLayoutComponent, SideBarComponent, FooterComponent, SidebarOptionSelectorDirective, ListComponent],
+  declarations: [MainLayoutComponent, SideBarComponent, FooterComponent, SidebarOptionSelectorDirective, ListComponent, ContentCanvasComponent],
   imports: [
     CommonModule,
     SharedRoutingModule
