@@ -14,10 +14,20 @@
         font-size: 1.5rem;
         margin-right:10px
     }
+}
 
-    & .compose-edit-icon{
-        width: 24px; 
-        height: 24px;
-        cursor: pointer;
-    }
+ul li{
+    height: 48px;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+
+.icon{
+    width: 24px; 
+    height: 24px;
+    cursor: pointer;
 }
