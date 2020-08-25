@@ -1,4 +1,9 @@
 <div style="border: 1px solid #ccc" class="h-100">
+
+    <div *ngIf="dataCount == 0" style="text-align: center; font-size: 1.5rem;color: #ccc;margin-top: 15rem;">
+        Nothing to see here, greate job!
+    </div>
+
     <ul>
         <li *ngFor="let mail of data">
             <header style="padding: 10px 15px;position: relative;">

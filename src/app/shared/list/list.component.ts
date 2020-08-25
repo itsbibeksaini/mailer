@@ -10,10 +10,15 @@ import { FakeDataProviderService } from 'src/app/core/services/fake-data-provide
 export class ListComponent implements OnInit {
 
   data: FakeMail[];
+  dataCount = 0;
 
-  constructor(private dataProvider: FakeDataProviderService) {     
-    debugger
-    this.data = dataProvider.getData();
+  constructor(private dataProvider: FakeDataProviderService) {         
+    dataProvider.getData().subscribe(data => {      
+      this.data = data;
+      this.dataCount = data.length;
+    });
+
+    
   }
 
   ngOnInit(): void {
