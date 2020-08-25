@@ -1,3 +1,23 @@
 .sidebar{
     background-color: #262626;
 }
+
+.compose-section{
+    height: 100px;
+    background-color: #2196f3; 
+    color:white; 
+    padding:30px 40px;
+    box-sizing: border-box;
+    text-align: center;
+
+    & .compose-label{
+        font-size: 1.5rem;
+        margin-right:10px
+    }
+
+    & .compose-edit-icon{
+        width: 24px; 
+        height: 24px;
+        cursor: pointer;
+    }
+}
