@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FakeMail } from 'src/app/data-models/fake-mail';
+import { FakeDataProviderService } from 'src/app/core/services/fake-data-provider.service';
 
 @Component({
   selector: 'app-list',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  data: FakeMail[];
+
+  constructor(private dataProvider: FakeDataProviderService) {     
+    debugger
+    this.data = dataProvider.getData();
+  }
 
   ngOnInit(): void {
   }

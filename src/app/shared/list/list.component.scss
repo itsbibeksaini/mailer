@@ -4,6 +4,11 @@ ul li{
     border-bottom:1px solid #ccc;
 }
 
+ul li:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
 .content{
     font-size: 12px;
     color: #999
