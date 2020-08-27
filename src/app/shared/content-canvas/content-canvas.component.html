@@ -1,15 +1,15 @@
-<div>
+<div *ngIf="selectedMail">
     <header style="padding: 20px 30px;background-color: #f6f6f6;" class="shadow-1">
         <div class="display-inline-block" style="width: 75%;">
-            <span style="font-size: 1.7rem;" class="display-block">Dribbble Digest</span>
-            <span class="display-block" style="margin-top: 1rem;">Dribbble </span>
+            <span style="font-size: 1.7rem;" class="display-block">{{selectedMail.SENDER}}</span>
+            <span class="display-block" style="margin-top: 1rem;">{{selectedMail.SUBJECT}} </span>
         </div>        
         <div class="display-inline-block" style="width: 20%;text-align: right;vertical-align: top;">
             <img src="assets/icons/trash-alt-solid.svg" style="width: 20px;height: 20px;cursor: pointer;">
-            <span class="display-block" style="margin-top: 1rem;">Jan, 09 2016 - 14:23 </span>
+            <span class="display-block" style="margin-top: 1rem;">{{selectedMail.MAIL_DATE}} </span>
         </div>
     </header>
     <div style="padding: 20px 30px;">
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+        <span>{{selectedMail.MAIL_CONTENT.CONTENT}}</span>
     </div>
 </div>

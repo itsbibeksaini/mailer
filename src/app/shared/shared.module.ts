@@ -8,10 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarOptionSelectorDirective } from './directives/sidebar-option-selector/sidebar-option-selector.directive';
 import { ListComponent } from './list/list.component';
 import { ContentCanvasComponent } from './content-canvas/content-canvas.component';
+import { ReadMailDirective } from './directives/read-mail/read-mail.directive';
 
 
 @NgModule({
-  declarations: [MainLayoutComponent, SideBarComponent, FooterComponent, SidebarOptionSelectorDirective, ListComponent, ContentCanvasComponent],
+  declarations: [MainLayoutComponent, SideBarComponent, FooterComponent, SidebarOptionSelectorDirective, ListComponent, ContentCanvasComponent, ReadMailDirective],
   imports: [
     CommonModule,
     SharedRoutingModule

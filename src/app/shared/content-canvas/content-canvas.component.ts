@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReadMailContentService } from 'src/app/core/services/read-mail-content/read-mail-content.service';
+import { FakeMail } from 'src/app/data-models/fake-mail';
 
 @Component({
   selector: 'app-content-canvas',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentCanvasComponent implements OnInit {
 
-  constructor() { }
+  selectedMail: FakeMail;
+  constructor(private mailContentReader: ReadMailContentService) { 
+    mailContentReader.SELECTED_MAIL.subscribe(selectedMail => {
+      this.selectedMail = selectedMail
+    })
+  }
 
   ngOnInit(): void {
   }
