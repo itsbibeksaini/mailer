@@ -49,7 +49,6 @@ export class FakeDataProviderService {
   }
 
   setMailReaded(selectedMail:FakeMail){
-    debugger
     var test = this.fakeDataBehaviour.value;
   }
 
