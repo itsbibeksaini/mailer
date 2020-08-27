@@ -6,6 +6,7 @@ export function getInboxData():FakeMail[] {
     let fakeInboxData: FakeMail[] = new Array();
 
     let fakeData1:FakeMail = new FakeMail();
+    fakeData1.ID = 1;
     fakeData1.SUBJECT = "Dribble 1";
     fakeData1.SENDER = "DRIBBLE DIGEST",
     fakeData1.MAIL_DATE = "JAN, 06 2016"
@@ -18,6 +19,7 @@ export function getInboxData():FakeMail[] {
     fakeInboxData.push(fakeData1);
 
     let fakeData2:FakeMail = new FakeMail();
+    fakeData2.ID = 2;
     fakeData2.SUBJECT = "Dribble 2";
     fakeData2.SENDER = "DRIBBLE DIGEST",
     fakeData2.MAIL_DATE = "JAN, 06 2016"
@@ -36,6 +38,7 @@ export function getSentData(): FakeMail[]{
     let fakeSentData = new Array();
 
     let fakeData1:FakeMail = new FakeMail();
+    fakeData1.ID = 1;
     fakeData1.SUBJECT = "Dribble 1";
     fakeData1.SENDER = "DRIBBLE DIGEST",
     fakeData1.MAIL_DATE = "JAN, 06 2016"
@@ -48,6 +51,7 @@ export function getSentData(): FakeMail[]{
     fakeSentData.push(fakeData1);
 
     let fakeData2:FakeMail = new FakeMail();
+    fakeData2.ID = 2;
     fakeData2.SUBJECT = "Dribble 2";
     fakeData2.SENDER = "DRIBBLE DIGEST",
     fakeData2.MAIL_DATE = "JAN, 06 2016"

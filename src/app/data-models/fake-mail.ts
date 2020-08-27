@@ -2,6 +2,14 @@ import { MailContent } from "./mail-content";
 
 export class FakeMail{
         
+    private _ID : number;
+    public get ID() : number {
+        return this._ID;
+    }
+    public set ID(v : number) {
+        this._ID = v;
+    }
+
     private _SENDER : string;
     public get SENDER() : string {
         return this._SENDER;

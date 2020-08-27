@@ -9,7 +9,7 @@ export class SidebarOptionSelectorDirective {
   @Input('option') selectedOption: string;
   constructor(private elementRef: ElementRef, private renderer: Renderer2, private dataProvider: FakeDataProviderService) { }
 
-  @HostListener('click') onmouseclick(){    
+  @HostListener('click') onmouseclick(){   
     this.dataProvider.MENU_SELECTED = this.selectedOption;
     this.dataProvider.updateList();    
   }  
