@@ -1,1 +1,30 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+    <ul class="pt-3">
+        <li style="background-color: #2196f3;" >
+            <fa-icon [icon]="faEdit" matTooltip="Compose"
+            matTooltipPosition="right"></fa-icon>
+        </li>
+        <li>
+            <fa-icon [icon]="faInbox" matTooltip="Inbox"
+            matTooltipPosition="right"></fa-icon>
+        </li>
+        <li>
+            <fa-icon [icon]="faPaperPlane" matTooltip="Sent"
+            matTooltipPosition="right"></fa-icon>
+        </li>
+        <li>
+            <fa-icon [icon]="faFile" matTooltip="Draft"
+            matTooltipPosition="right"></fa-icon>
+        </li>
+        <li>
+            <fa-icon [icon]="faTrash" matTooltip="Trash"
+            matTooltipPosition="right"></fa-icon>
+        </li>        
+    </ul>
+    <ul class="bottom-list">
+        <li>
+            <fa-icon [icon]="faChevronRight" matTooltip="Expand"
+            matTooltipPosition="right"></fa-icon>
+        </li>
+    </ul>
+</div>
