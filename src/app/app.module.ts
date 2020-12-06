@@ -8,12 +8,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatListModule} from '@angular/material/list'
-import {MatTooltipModule} from '@angular/material/tooltip'
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { MailListComponent } from './components/mail-list/mail-list.component';
+import { MailPreviewComponent } from './components/mail-preview/mail-preview.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent
+    SidebarComponent,
+    MailListComponent,
+    MailPreviewComponent
   ],
   imports: [
     BrowserModule,
