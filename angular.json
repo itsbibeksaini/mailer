@@ -31,8 +31,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "src/custom-theme.scss",
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules/"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -93,10 +100,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/custom-theme.scss",
+            "styles": [              
               "src/styles.scss"
-            ],
+            ],            
             "scripts": []
           }
         },
