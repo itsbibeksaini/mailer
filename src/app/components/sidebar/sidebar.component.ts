@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { faChevronRight, faEdit, faFile, faHome, faInbox, faPaperPlane, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
+import { faChevronLeft, faChevronRight, faEdit, faFile, faHome, faInbox, faPaperPlane, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'sidebar',
@@ -13,8 +13,11 @@ export class SidebarComponent implements OnInit {
   faPaperPlane = faPaperPlane
   faFile = faFile
   faTrash = faTrash
-  faChevronRight = faChevronRight
-  constructor() { }
+  expandColapseIcon = faChevronRight
+
+  
+  
+  constructor(private rendrer:Renderer2, private sideBar: ElementRef) { }
 
   ngOnInit(): void {
   }
