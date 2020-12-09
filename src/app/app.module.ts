@@ -9,6 +9,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatListModule} from '@angular/material/list'
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatCardModule} from '@angular/material/card';
+import {MatRippleModule} from '@angular/material/core';
 import { MailListComponent } from './components/mail-list/mail-list.component';
 import { MailPreviewComponent } from './components/mail-preview/mail-preview.component'
 
@@ -26,7 +28,9 @@ import { MailPreviewComponent } from './components/mail-preview/mail-preview.com
     FontAwesomeModule,
     FlexLayoutModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
