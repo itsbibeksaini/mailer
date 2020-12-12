@@ -1,16 +1,16 @@
 <mat-card style="overflow: hidden;overflow-y: auto;box-shadow: 0 1px 3px rgba(0,0,0,0.4);" class="h-100 p-0">
     <ul>
-        <li class="container-fluid">
+        <li class="container-fluid" *ngFor="let mail of mails">
             <div matRipple class="row p-2">
                 <div class="col-2">
                     <div class="mail-item-image animate__animated animate__zoomIn animate__faster">
                     </div>
                 </div>
                 <div class="col-10">
-                    <span class="mat-h2">Sender</span>
-                    <span class="mat-small d-block">Subject Subject Subject Subject</span>
-                    <span class="mat-small d-block" style="direction: rtl;">JAN, 06 2020</span>
-                    <div style=" position: absolute;top:10px;right: 10px; width: 5px;height: 5px;background-color: #2196F3;border-radius: 50%;">
+                    <span class="mat-h2">{{mail.SENDER}}</span>
+                    <span class="mat-small d-block">{{mail.SUBJECT}}</span>
+                    <span class="mat-small d-block" style="direction: rtl;">{{mail.DATE}}</span>
+                    <div *ngIf="!mail.IS_READED" class="animate__animated animate__zoomIn animate__faster" style=" position: absolute;top:10px;right: 10px; width: 5px;height: 5px;background-color: #2196F3;border-radius: 50%;">
 
                     </div>
                 </div>
