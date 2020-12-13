@@ -3,10 +3,14 @@
         <mat-list-item style="background-color:#2196F3" matTooltip="Compose" matTooltipPosition="right">
             <fa-icon mat-list-icon [icon]="faEdit" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
             <div mat-line>Compose</div>
+            
         </mat-list-item>
         <mat-list-item  matTooltip="Inbox" matTooltipPosition="right">
             <fa-icon mat-list-icon [icon]="faInbox" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
             <div mat-line>Inbox</div>
+            <div class="counter-bubble animate__animated animate__zoomIn animate__faster">
+                {{inboxCounter}}
+            </div>
         </mat-list-item>
         <mat-list-item matTooltip="Sent" matTooltipPosition="right">
             <fa-icon mat-list-icon [icon]="faPaperPlane" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
