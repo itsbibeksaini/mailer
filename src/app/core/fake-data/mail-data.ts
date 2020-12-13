@@ -7,9 +7,10 @@ mail1.SENDER = "Dribbble"
 mail1.SUBJECT = "Test mail"
 mail1.IS_READED = false
 mail1.DATE = new Date()
-MAILS.push(mail1)
 
 export function getInboxMails(): Mail[]{
+    MAILS.push(mail1)
+    MAILS.push(mail1)
     return MAILS
 }
 
