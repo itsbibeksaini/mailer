@@ -28,4 +28,11 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.4);
         text-align: center;
     }
+
+    @media only screen and (max-width: 1024px){
+        .counter-bubble{
+            display: none !important;
+        }
+    }
 }
+
