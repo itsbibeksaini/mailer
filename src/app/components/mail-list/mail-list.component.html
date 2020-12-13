@@ -1,4 +1,8 @@
-<mat-card style="overflow: hidden;overflow-y: auto;box-shadow: 0 1px 3px rgba(0,0,0,0.4);" class="h-100 p-0">
+<div style="overflow: hidden;overflow-y: auto;box-shadow: 0 1px 3px rgba(0,0,0,0.4);position: relative;" class="h-100 p-0">
+    <div class="w-100 text-center" style="position: absolute;top:50%;left: 50%;transform: translate(-50%, -50%);">
+        <img src="assets/selectoption.svg">     
+        <span class="mat-h1">Select option to view mails</span>   
+    </div>
     <ul>
         <li class="container-fluid" *ngFor="let mail of mails">
             <div matRipple class="row p-2">
@@ -17,4 +21,4 @@
             </div>
         </li>
     </ul>
-</mat-card>
+</div>
