@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { MAILS } from '../../fake-data';
+import { getDraftMails, getInboxMails, getSentMails, getTrashedMails, MAILS } from '../../fake-data';
 import { Mail } from '../../models';
+import { MailState } from '../../state/mail-state';
 
 
 @Injectable({
@@ -11,7 +12,13 @@ export class MailService {
 
   constructor() { }
 
-  getMails(): Observable<Mail[]>{
-    return of(MAILS)
+  getMails(): Observable<MailState>{
+    return of({
+      inboxMails: getInboxMails(),
+      sentMails: getSentMails(),
+      draftMails: getDraftMails(),
+      trashedMails: getTrashedMails(),
+      isLoaded: true      
+    })
   }
 }

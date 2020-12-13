@@ -14,8 +14,8 @@ export class MailQueryService extends Query<MailState>{
     super(mailStore);
   }
 
-  getMails(): Observable<Mail[]>{
-    return this.select(state => state.mails)
+  getMails(): Observable<MailState>{
+    return this.select(state => state)
   }
 
   getLoaded(): Observable<boolean>{

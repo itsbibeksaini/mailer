@@ -20,28 +20,28 @@ export class MailListComponent implements OnInit {
               private mailService: MailService) { }
 
   ngOnInit(): void {
-    this.mailQuery.getIsLoading().subscribe(res => this.loading = res)
-    this.mailQuery.getMails().subscribe(res => this.mails = res)
+    // this.mailQuery.getIsLoading().subscribe(res => this.loading = res)
+    // this.mailQuery.getMails().subscribe(res => this.mails = res)
 
-    // load this from api
-    this.mailQuery.getLoaded().pipe(
-      take(1),
-      filter(res => !res),
-      switchMap(() =>{
-        this.mailStore.setLoading(true)
-        return this.mailService.getMails() // get data from backend api or fake backend 
-      }) 
-    ).subscribe(res => {
-      this.mailStore.update(state => {
-        return {
-          mails: res
-        }
-      })
-      this.mailStore.setLoading(false)
-    }, err =>{
-      console.log(err)
-      this.mailStore.setLoading(false)
-    })
+    // // load this from api
+    // this.mailQuery.getLoaded().pipe(
+    //   take(1),
+    //   filter(res => !res),
+    //   switchMap(() =>{
+    //     this.mailStore.setLoading(true)
+    //     return this.mailService.getMails() // get data from backend api or fake backend 
+    //   }) 
+    // ).subscribe(res => {
+    //   this.mailStore.update(state => {
+    //     return {
+          
+    //     }
+    //   })
+    //   this.mailStore.setLoading(false)
+    // }, err =>{
+    //   console.log(err)
+    //   this.mailStore.setLoading(false)
+    // })
   }
 
 }
