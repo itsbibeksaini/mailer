@@ -3,6 +3,21 @@
 
 }
 
+.mail-preview-image{
+    width: 500px; 
+    height: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.mail-list{
+    transition: all 0.2s ease-in-out;
+}
+
 @media only screen and (max-width: 425px){
     .mail-list{
         // flex: 1 1 100% !important;        
