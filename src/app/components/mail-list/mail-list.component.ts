@@ -13,6 +13,7 @@ import { MailQueryService } from 'src/app/core/query/mail-query/mail-query.servi
 export class MailListComponent implements OnInit {
 
   loading:boolean = false
+  hasMails:boolean = false
   mails:Mail[] = []
 
   constructor(private mailQuery: MailQueryService, 
@@ -21,7 +22,14 @@ export class MailListComponent implements OnInit {
 
   ngOnInit(): void {
     // this.mailQuery.getIsLoading().subscribe(res => this.loading = res)
-    // this.mailQuery.getMails().subscribe(res => this.mails = res)
+    // this.mailQuery.getMails().subscribe(res => {
+    //   if(res.inboxMails.length > 0){
+    //     this.mails = res.inboxMails
+    //     this.hasMails = true
+    //   }
+        
+      
+    // })
 
     // // load this from api
     // this.mailQuery.getLoaded().pipe(

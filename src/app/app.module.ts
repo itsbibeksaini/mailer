@@ -12,14 +12,16 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
 import { MailListComponent } from './components/mail-list/mail-list.component';
-import { MailPreviewComponent } from './components/mail-preview/mail-preview.component'
+import { MailPreviewComponent } from './components/mail-preview/mail-preview.component';
+import { FolderSelectorDirective } from './core/directives/folder-selector/folder-selector.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     MailListComponent,
-    MailPreviewComponent
+    MailPreviewComponent,
+    FolderSelectorDirective
   ],
   imports: [
     BrowserModule,
