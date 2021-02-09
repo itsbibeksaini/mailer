@@ -1,7 +1,7 @@
 <div class="h-100 p-0 mail-list">
-    <div class="w-100 text-center select-option" *ngIf="!hasMails">
+    <div class="w-100 text-center select-option p-1" *ngIf="!hasMails">
         <img src="assets/selectoption.svg" class="animate__animated animate__zoomIn">     
-        <span class="mat-h1">Select option to view mails</span>   
+        <span class="mat-h1">Select folder to view mails</span>   
     </div>
     <ul>
         <li class="container-fluid" *ngFor="let mail of mails">
