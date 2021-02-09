@@ -1,2 +1,2 @@
-export { MAILS, getInboxMails, getSentMails, getDraftMails, getTrashedMails } from './mail-data'
+export { MAILS, getInboxMails, getSentMails, getDraftMails } from './mail-data'
 

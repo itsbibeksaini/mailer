@@ -19,11 +19,18 @@ export class SidebarComponent implements OnInit {
 
   
   inboxCounter = 0
+  sentCounter = 0
+  draftCounter = 0
+  trashedCounter = 0
+
   constructor(private mailQuery: MailQueryService, private mailStore: MailStoreService) { }
 
   ngOnInit(): void {
     this.mailQuery.getMails().subscribe(res =>{      
       this.inboxCounter = res.inboxMails.length
+      this.sentCounter = res.sentMails.length
+      this.draftCounter = res.draftMails.length
+      this.trashedCounter = res.trashedMails.length
     })
   }
 

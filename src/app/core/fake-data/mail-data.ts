@@ -22,6 +22,6 @@ export function getDraftMails(): Mail[]{
     return MAILS
 }
 
-export function getTrashedMails(): Mail[]{
-    return MAILS
-}
+// export function getTrashedMails(): Mail[]{
+//     return MAILS
+// }

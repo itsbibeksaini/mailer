@@ -25,7 +25,7 @@ export class MailListComponent implements OnInit {
     this.mailQuery.getMails().subscribe(res => {
 
       this.hasMails = false      
-      if(res.selectedFolder == "inbox" && res.inboxMails.length > 5){
+      if(res.selectedFolder == "inbox" && res.inboxMails.length > 0){
         this.mails = res.inboxMails
         this.hasMails = true  
       }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { getDraftMails, getInboxMails, getSentMails, getTrashedMails, MAILS } from '../../fake-data';
+import { getDraftMails, getInboxMails, getSentMails, MAILS } from '../../fake-data';
 import { Mail } from '../../models';
 import { MailState } from '../../state/mail-state';
 
@@ -17,7 +17,7 @@ export class MailService {
       inboxMails: getInboxMails(),
       sentMails: getSentMails(),
       draftMails: getDraftMails(),
-      trashedMails: getTrashedMails(),
+      trashedMails: [],
       isLoaded: true,
       selectedFolder:''
     })
