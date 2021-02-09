@@ -10,8 +10,7 @@ export class FolderSelectorDirective {
 
   constructor(private mailStore:MailStoreService) { }
 
-  @HostListener('click') openFolder(){
-    debugger
+  @HostListener('click') openFolder(){    
     this.mailStore.update(state => {
       return {
         selectedFolder: this.folder
