@@ -6,28 +6,28 @@
             
         </mat-list-item>
         <mat-list-item  matTooltip="Inbox" matTooltipPosition="right" folder="inbox">
-            <fa-icon mat-list-icon [icon]="faInbox" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
+            <fa-icon mat-list-icon [icon]="faInbox" [ngClass] ="{selected: selectedFolder === 'inbox'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
             <div mat-line>Inbox</div>
             <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="inboxCounter > 0">
                 {{inboxCounter}}
             </div>
         </mat-list-item>
         <mat-list-item matTooltip="Sent" matTooltipPosition="right" folder="sent">
-            <fa-icon mat-list-icon [icon]="faPaperPlane" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
+            <fa-icon mat-list-icon [icon]="faPaperPlane" [ngClass] ="{selected: selectedFolder === 'sent'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
             <div mat-line>Sent</div>
             <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="sentCounter > 0">
                 {{sentCounter}}
             </div>
         </mat-list-item>
         <mat-list-item matTooltip="Draft" matTooltipPosition="right" folder="draft">
-            <fa-icon mat-list-icon [icon]="faFile" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
+            <fa-icon mat-list-icon [icon]="faFile" [ngClass] ="{selected: selectedFolder === 'draft'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
             <div mat-line>Draft</div>
             <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="draftCounter > 0">
                 {{draftCounter}}
             </div>
         </mat-list-item>
         <mat-list-item matTooltip="Trash" matTooltipPosition="right" folder="trashed">
-            <fa-icon mat-list-icon [icon]="faTrash" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
+            <fa-icon mat-list-icon [icon]="faTrash" [ngClass] ="{selected: selectedFolder === 'trashed'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>
             <div mat-line>Trash</div>
             <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="trashedCounter > 0">
                 {{trashedCounter}}

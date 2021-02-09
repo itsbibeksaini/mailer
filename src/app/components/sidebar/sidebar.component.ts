@@ -16,12 +16,13 @@ export class SidebarComponent implements OnInit {
   faFile = faFile
   faTrash = faTrash
   expandColapseIcon = faChevronRight
-
   
   inboxCounter = 0
   sentCounter = 0
   draftCounter = 0
   trashedCounter = 0
+
+  selectedFolder:string = ''
 
   constructor(private mailQuery: MailQueryService, private mailStore: MailStoreService) { }
 
@@ -32,6 +33,8 @@ export class SidebarComponent implements OnInit {
       this.draftCounter = res.draftMails.length
       this.trashedCounter = res.trashedMails.length
     })
+
+    this.mailQuery.getMails().subscribe(res => this.selectedFolder = res.selectedFolder)
   }
 
 }

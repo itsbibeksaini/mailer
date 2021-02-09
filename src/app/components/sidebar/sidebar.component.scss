@@ -18,6 +18,14 @@
         right: 0;                
     }
 
+    .selected{
+        color: #2196F3;
+    }
+
+    & fa-icon{
+        transition: all 0.2s ease-in-out;
+    }
+
     .counter-bubble{
         border-radius: 50%; 
         width: 25px; 
