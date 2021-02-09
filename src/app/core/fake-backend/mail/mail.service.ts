@@ -18,7 +18,8 @@ export class MailService {
       sentMails: getSentMails(),
       draftMails: getDraftMails(),
       trashedMails: getTrashedMails(),
-      isLoaded: true      
+      isLoaded: true,
+      selectedFolder:''
     })
   }
 }

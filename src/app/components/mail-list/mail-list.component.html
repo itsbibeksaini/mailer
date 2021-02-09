@@ -3,7 +3,7 @@
         <img src="assets/selectoption.svg" class="animate__animated animate__zoomIn">     
         <span class="mat-h1">Select folder to view mails</span>   
     </div>
-    <ul>
+    <ul *ngIf="hasMails">
         <li class="container-fluid" *ngFor="let mail of mails">
             <div matRipple class="row p-2">
                 <div class="col-2">

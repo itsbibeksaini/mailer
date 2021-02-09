@@ -22,34 +22,28 @@ export class MailListComponent implements OnInit {
 
   ngOnInit(): void {
     // this.mailQuery.getIsLoading().subscribe(res => this.loading = res)
-    // this.mailQuery.getMails().subscribe(res => {
-    //   if(res.inboxMails.length > 0){
-    //     this.mails = res.inboxMails
-    //     this.hasMails = true
-    //   }
-        
+    this.mailQuery.getMails().subscribe(res => {
+
+      this.hasMails = false      
+      if(res.selectedFolder == "inbox" && res.inboxMails.length > 5){
+        this.mails = res.inboxMails
+        this.hasMails = true  
+      }
+      else if(res.selectedFolder == "sent" && res.sentMails.length > 0){
+        this.mails = res.sentMails
+        this.hasMails = true  
+      }
+      if(res.selectedFolder == "draft" && res.draftMails.length > 0){
+        this.mails = res.draftMails
+        this.hasMails = true  
+      }
+      if(res.selectedFolder == "trashed" && res.trashedMails.length > 0){
+        this.mails = res.trashedMails
+        this.hasMails = true  
+      }
       
-    // })
-
-    // // load this from api
-    // this.mailQuery.getLoaded().pipe(
-    //   take(1),
-    //   filter(res => !res),
-    //   switchMap(() =>{
-    //     this.mailStore.setLoading(true)
-    //     return this.mailService.getMails() // get data from backend api or fake backend 
-    //   }) 
-    // ).subscribe(res => {
-    //   this.mailStore.update(state => {
-    //     return {
-          
-    //     }
-    //   })
-    //   this.mailStore.setLoading(false)
-    // }, err =>{
-    //   console.log(err)
-    //   this.mailStore.setLoading(false)
-    // })
+    }, err =>{
+      console.log(err);
+    })
   }
-
 }
