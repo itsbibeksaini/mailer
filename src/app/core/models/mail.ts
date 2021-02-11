@@ -1,3 +1,5 @@
+import { MailContent } from "./mail-content";
+
 export class Mail{
 
     private _SENDER! : string;
@@ -31,4 +33,22 @@ export class Mail{
     public set IS_READED(v : boolean) {
         this._IS_READED = v;
     }
+    
+    private _IS_DELETED! : string;
+    public get IS_DELETED() : string {
+        return this._IS_DELETED;
+    }
+    public set IS_DELETED(v : string) {
+        this._IS_DELETED = v;
+    }
+    
+    
+    private _CONTENT! : MailContent;
+    public get CONTENT() : MailContent {
+        return this._CONTENT;
+    }
+    public set CONTENT(v : MailContent) {
+        this._CONTENT = v;
+    }
+    
 }

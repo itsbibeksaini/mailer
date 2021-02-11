@@ -14,6 +14,7 @@ import {MatRippleModule} from '@angular/material/core';
 import { MailListComponent } from './components/mail-list/mail-list.component';
 import { MailPreviewComponent } from './components/mail-preview/mail-preview.component';
 import { FolderSelectorDirective } from './core/directives/folder-selector/folder-selector.directive'
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FolderSelectorDirective } from './core/directives/folder-selector/folde
     MatListModule,
     MatTooltipModule,
     MatCardModule,
-    MatRippleModule
+    MatRippleModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
