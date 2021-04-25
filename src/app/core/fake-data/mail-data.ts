@@ -3,14 +3,14 @@ import { Mail, MailContent } from '../models';
 // export const MAILS:Mail[] = []
 
 
-function generateFakeMailData(counter:number): Mail[]{
+function generateFakeMailData(counter:number,isReaded:boolean): Mail[]{
     let MAILS: Mail[] = []
     for (let index = 0; index < counter; index++) {
         let mail: Mail = new Mail()
         mail.ID = index + ""
         mail.SENDER = "Dribbble"
         mail.SUBJECT = "Test mail"
-        mail.IS_READED = false
+        mail.IS_READED = isReaded
         mail.DATE = new Date()
 
         let mailContent:MailContent = new MailContent()
@@ -23,15 +23,15 @@ function generateFakeMailData(counter:number): Mail[]{
 }
 
 export function getInboxMails(): Mail[]{
-    return generateFakeMailData(10)    
+    return generateFakeMailData(10, false)    
 }
 
 export function getSentMails(): Mail[]{
-    return generateFakeMailData(5)    
+    return generateFakeMailData(5, true)    
 }
 
 export function getDraftMails(): Mail[]{
-    return generateFakeMailData(3)    
+    return generateFakeMailData(3, true)    
 }
 
 // export function getTrashedMails(): Mail[]{
