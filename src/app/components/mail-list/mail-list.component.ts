@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Mail } from 'src/app/core/models';
-import { MailStoreService } from 'src/app/core/store/mail-store/mail-store.service';
 import {filter, switchMap, take} from 'rxjs/operators'
 import { MailService } from 'src/app/core/fake-backend/mail/mail.service';
-import { MailQueryService } from 'src/app/core/query/mail-query/mail-query.service';
-
+import { MailQueryService } from './state/mail-query/mail-query.service';
+import { MailStoreService } from './state/mail-store/mail-store.service';
 @Component({
   selector: 'mail-list',
   templateUrl: './mail-list.component.html',

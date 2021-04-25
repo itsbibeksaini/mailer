@@ -1,4 +1,4 @@
-import { Mail } from '../models';
+import { Mail } from "src/app/core/models"
 
 export interface MailState{
     inboxMails: Mail[],

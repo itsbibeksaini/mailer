@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Query } from '@datorama/akita';
 import { Observable } from 'rxjs';
-import { Mail } from '../../models';
 import { MailState } from '../../state/mail-state';
-import { MailStoreService } from '../../store/mail-store/mail-store.service';
+import { MailStoreService } from '../mail-store/mail-store.service';
 
 @Injectable({
   providedIn: 'root'
