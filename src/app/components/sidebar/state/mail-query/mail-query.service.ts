@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Query } from '@datorama/akita';
 import { Observable } from 'rxjs';
-import { MailState } from '../../state/mail-state';
+import { MailState } from '../mail-state';
 import { MailStoreService } from '../mail-store/mail-store.service';
 
 @Injectable({

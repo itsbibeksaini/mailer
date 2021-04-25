@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
 import { faChevronLeft, faChevronRight, faEdit, faFile, faHome, faInbox, faPaperPlane, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { MailQueryService } from '../mail-list/state/mail-query/mail-query.service';
-import { MailStoreService } from '../mail-list/state/mail-store/mail-store.service';
+import { MailQueryService } from './state/mail-query/mail-query.service';
+import { MailStoreService } from './state/mail-store/mail-store.service';
 @Component({
   selector: 'sidebar',
   templateUrl: './sidebar.component.html',

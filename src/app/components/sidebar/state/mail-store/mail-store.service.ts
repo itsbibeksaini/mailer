@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Store, StoreConfig } from '@datorama/akita';
-import { getInitialState, MailState } from '../../state/mail-state';
+import { getInitialState, MailState } from '../mail-state';
 
 @Injectable({
   providedIn: 'root'

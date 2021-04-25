@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { filter, switchMap, take } from 'rxjs/operators';
-import { MailQueryService } from './components/mail-list/state/mail-query/mail-query.service';
-import { MailStoreService } from './components/mail-list/state/mail-store/mail-store.service';
+import { MailQueryService } from './components/sidebar/state/mail-query/mail-query.service';
+import { MailStoreService } from './components/sidebar/state/mail-store/mail-store.service';
 import { MailService } from './core/fake-backend/mail/mail.service';
 
 @Component({
