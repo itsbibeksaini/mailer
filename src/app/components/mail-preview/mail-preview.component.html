@@ -20,7 +20,8 @@
         </div>
     </div>
 </div> -->
-<div class="container-fluid p-0 mail-preview" fxLayout="column">
+<div class="container-fluid p-0 mail-preview" fxLayout="column" *ngIf="hasSelectedMail">
+    
     <header fxFlex="80px" class="mail-header container-fluid p-0">
         <div fxFlex="80px" class="position-relative">
             <div class="sender-icon">
@@ -40,4 +41,9 @@
     <div fxFlex>
 
     </div>
+</div>
+
+<div *ngIf="!hasSelectedMail" class="mail-preview-image">
+    <img src="assets/mail.svg" class="animate__animated animate__zoomIn">
+    <span class="mat-h1">Select mail to preview</span>
 </div>

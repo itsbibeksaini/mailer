@@ -21,3 +21,12 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
 }
+
+.mail-preview-image{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 500px;
+}
