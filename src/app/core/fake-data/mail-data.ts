@@ -1,4 +1,4 @@
-import { Mail } from '../models';
+import { Mail, MailContent } from '../models';
 
 export const MAILS:Mail[] = []
 
@@ -8,6 +8,10 @@ mail1.SENDER = "Dribbble"
 mail1.SUBJECT = "Test mail"
 mail1.IS_READED = false
 mail1.DATE = new Date()
+let mailContent:MailContent = new MailContent()
+mailContent.CONTENT = "Testing mail"
+mailContent.IS_HTML = false
+mail1.CONTENT =  mailContent
 
 export function getInboxMails(): Mail[]{
     MAILS.push(mail1)
