@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { MailPreviewQuery } from 'src/app/components/mail-preview/state/mail-preview-query';
 import { MailState } from 'src/app/components/sidebar/state/mail-state';
-import { getDraftMails, getInboxMails, getSentMails, MAILS } from '../../fake-data';
+import { getDraftMails, getInboxMails, getSentMails } from '../../fake-data';
 import { Mail } from '../../models';
 
 
