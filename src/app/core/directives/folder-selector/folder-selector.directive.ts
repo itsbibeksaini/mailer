@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Directive, HostListener, Input } from '@angular/core';
 import { MailPreviewStore } from 'src/app/components/mail-preview/state/mail-preview-store';
 import { MailQueryService } from 'src/app/components/sidebar/state/mail-query/mail-query.service';
@@ -12,7 +13,7 @@ export class FolderSelectorDirective {
 
   @Input('folder') folder!: string;
 
-  constructor(private mailPreviewStore:MailPreviewStore, private mailQuery:MailQueryService) { }
+  constructor(private mailPreviewStore:MailPreviewStore, private mailQuery:MailQueryService, private mailStore:MailStoreService) { }
 
   @HostListener('click') openFolder(){    
     this.mailQuery.getFolderMails(this.folder).subscribe(res => {
@@ -23,6 +24,8 @@ export class FolderSelectorDirective {
         }
       })
     }).unsubscribe()
+
+    this.mailStore.update({selectedFolder: this.folder})
   }
 
 }
