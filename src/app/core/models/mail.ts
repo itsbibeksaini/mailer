@@ -2,6 +2,14 @@ import { MailContent } from "./mail-content";
 
 export class Mail{
 
+    private _ID! : string;
+    public get ID() : string {
+        return this._ID;
+    }
+    public set ID(v : string) {
+        this._ID = v;
+    }
+    
     private _SENDER! : string;
     public get SENDER() : string {
         return this._SENDER;

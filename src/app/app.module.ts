@@ -15,6 +15,7 @@ import { MailListComponent } from './components/mail-list/mail-list.component';
 import { MailPreviewComponent } from './components/mail-preview/mail-preview.component';
 import { FolderSelectorDirective } from './core/directives/folder-selector/folder-selector.directive'
 import {MatButtonModule} from '@angular/material/button';
+import { MailSelectorDirective } from './core/directives/mail-selector/mail-selector.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
     SidebarComponent,
     MailListComponent,
     MailPreviewComponent,
-    FolderSelectorDirective
+    FolderSelectorDirective,
+    MailSelectorDirective
   ],
   imports: [
     BrowserModule,
