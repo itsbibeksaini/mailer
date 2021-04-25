@@ -1,25 +1,3 @@
-<!-- <div class="container-fluid p-0 mail-preview" fxLayout="column">
-    <div fxFlex class="mail-header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-1 p-0">
-                    <div class="sender-icon">
-                    </div>
-                </div>
-                <div class="col-10">
-                    <span class="mat-display-1 display-block m-0">Sender</span>
-                    <span class="mat-body display-block m-0">Subject</span>
-                    <span class="mat-body display-block m-0">Date</span>
-                </div>
-                <div class="col-1">
-                    <button type="button" mat-icon-button>
-                        <fa-icon [icon]="faTrash" style="font-size: 21px;color:#F44336"></fa-icon>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="container-fluid p-0 mail-preview" fxLayout="column" *ngIf="hasSelectedMail">
     
     <header fxFlex="80px" class="mail-header container-fluid p-0">
@@ -38,8 +16,7 @@
             </button>
         </div>
     </header>
-    <div fxFlex class="padding2030">
-        {{selectedMail.CONTENT.CONTENT}}
+    <div fxFlex class="padding2030" [innerHtml]="selectedMail.CONTENT.CONTENT">        
     </div>
 </div>
 
