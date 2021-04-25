@@ -33,7 +33,7 @@ export class SidebarComponent implements OnInit {
       this.trashedCounter = res.trashedMails.length
     })
 
-    this.mailQuery.getMails().subscribe(res => this.selectedFolder = res.selectedFolder)
+    // this.mailQuery.getMails().subscribe(res => this.selectedFolder = res.selectedFolder)
   }
 
 }

@@ -5,8 +5,7 @@ export interface MailState{
     sentMails: Mail[],
     draftMails: Mail[],
     trashedMails: Mail[],
-    isLoaded: boolean,
-    selectedFolder: string
+    isLoaded: boolean,    
 }
 
 export const getInitialState = () => {
@@ -15,7 +14,6 @@ export const getInitialState = () => {
         sentMails: [],
         draftMails: [],
         trashedMails: [],
-        isLoaded: false,
-        selectedFolder: ''
+        isLoaded: false,        
     }
 }
