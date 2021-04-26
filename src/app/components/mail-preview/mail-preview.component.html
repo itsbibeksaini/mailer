@@ -16,7 +16,14 @@
             </button>
         </div>
     </header>
-    <div fxFlex class="padding2030" [innerHtml]="selectedMail.CONTENT.CONTENT">        
+    <div fxFlex class="padding2030 text-center centralize">        
+        <div style="width: 500px;" class="">
+            <img src="assets/mail-reading.svg" style="width: 100%;">
+        </div>
+        <span class="mat-display-1 display-block m-0">{{selectedMail.CONTENT.CONTENT}}</span>
+        <span class="mat-small display-block m-0">This app is built on <b>Angular framework 11.</b></span>
+        <span class="mat-small display-block m-0">This app is just for demonstrating the mail in different folders and mail preview.</span>
+        <span class="mat-small display-block m-0">Thank you so much for exploring this app.</span>
     </div>
 </div>
 
