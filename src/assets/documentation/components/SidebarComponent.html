@@ -1,0 +1,859 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>mailer documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">mailer documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SidebarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/sidebar/sidebar.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>sidebar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sidebar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sidebar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#draftCounter">draftCounter</a>
+                            </li>
+                            <li>
+                                <a href="#expandColapseIcon">expandColapseIcon</a>
+                            </li>
+                            <li>
+                                <a href="#faEdit">faEdit</a>
+                            </li>
+                            <li>
+                                <a href="#faFile">faFile</a>
+                            </li>
+                            <li>
+                                <a href="#faInbox">faInbox</a>
+                            </li>
+                            <li>
+                                <a href="#faPaperPlane">faPaperPlane</a>
+                            </li>
+                            <li>
+                                <a href="#faTrash">faTrash</a>
+                            </li>
+                            <li>
+                                <a href="#inboxCounter">inboxCounter</a>
+                            </li>
+                            <li>
+                                <a href="#selectedFolder">selectedFolder</a>
+                            </li>
+                            <li>
+                                <a href="#sentCounter">sentCounter</a>
+                            </li>
+                            <li>
+                                <a href="#trashedCounter">trashedCounter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(mailQuery: <a href="../injectables/MailQueryService.html">MailQueryService</a>, mailStore: <a href="../injectables/MailStoreService.html">MailStoreService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>mailQuery</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MailQueryService.html" target="_self" >MailQueryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>mailStore</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MailStoreService.html" target="_self" >MailStoreService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="draftCounter"></a>
+                        <span class="name">
+                            <b>
+                            draftCounter</b>
+                            <a href="#draftCounter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="expandColapseIcon"></a>
+                        <span class="name">
+                            <b>
+                            expandColapseIcon</b>
+                            <a href="#expandColapseIcon"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faChevronRight</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faEdit"></a>
+                        <span class="name">
+                            <b>
+                            faEdit</b>
+                            <a href="#faEdit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faEdit</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faFile"></a>
+                        <span class="name">
+                            <b>
+                            faFile</b>
+                            <a href="#faFile"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faFile</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faInbox"></a>
+                        <span class="name">
+                            <b>
+                            faInbox</b>
+                            <a href="#faInbox"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faInbox</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faPaperPlane"></a>
+                        <span class="name">
+                            <b>
+                            faPaperPlane</b>
+                            <a href="#faPaperPlane"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faPaperPlane</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="faTrash"></a>
+                        <span class="name">
+                            <b>
+                            faTrash</b>
+                            <a href="#faTrash"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>faTrash</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="inboxCounter"></a>
+                        <span class="name">
+                            <b>
+                            inboxCounter</b>
+                            <a href="#inboxCounter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedFolder"></a>
+                        <span class="name">
+                            <b>
+                            selectedFolder</b>
+                            <a href="#selectedFolder"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sentCounter"></a>
+                        <span class="name">
+                            <b>
+                            sentCounter</b>
+                            <a href="#sentCounter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="trashedCounter"></a>
+                        <span class="name">
+                            <b>
+                            trashedCounter</b>
+                            <a href="#trashedCounter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/components/sidebar/sidebar.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, OnInit, Renderer2, ViewChild, ViewContainerRef } from &#x27;@angular/core&#x27;;
+import { faChevronLeft, faChevronRight, faEdit, faFile, faHome, faInbox, faPaperPlane, faPlus, faTrash } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+import { MailQueryService } from &#x27;./state/mail-query/mail-query.service&#x27;;
+import { MailStoreService } from &#x27;./state/mail-store/mail-store.service&#x27;;
+@Component({
+  selector: &#x27;sidebar&#x27;,
+  templateUrl: &#x27;./sidebar.component.html&#x27;,
+  styleUrls: [&#x27;./sidebar.component.scss&#x27;]
+})
+export class SidebarComponent implements OnInit {
+
+  faEdit &#x3D; faEdit
+  faInbox &#x3D; faInbox
+  faPaperPlane &#x3D; faPaperPlane
+  faFile &#x3D; faFile
+  faTrash &#x3D; faTrash
+  expandColapseIcon &#x3D; faChevronRight
+  
+  inboxCounter &#x3D; 0
+  sentCounter &#x3D; 0
+  draftCounter &#x3D; 0
+  trashedCounter &#x3D; 0
+
+  selectedFolder:string &#x3D; &#x27;&#x27;
+
+  constructor(private mailQuery: MailQueryService, private mailStore: MailStoreService) { }
+
+  ngOnInit(): void {
+    this.mailQuery.getMails().subscribe(res &#x3D;&gt;{   
+      this.inboxCounter &#x3D; res.inboxMails.filter(x &#x3D;&gt; !x.IS_READED).length
+      this.sentCounter &#x3D; res.sentMails.filter(x &#x3D;&gt; !x.IS_READED).length
+      this.draftCounter &#x3D; res.draftMails.filter(x &#x3D;&gt; !x.IS_READED).length
+      this.trashedCounter &#x3D; res.trashedMails.filter(x &#x3D;&gt; !x.IS_READED).length
+    })
+
+    this.mailQuery.getMails().subscribe(res &#x3D;&gt; this.selectedFolder &#x3D; res.selectedFolder)
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;sidebar&quot;&gt;
+    &lt;mat-nav-list&gt;
+        &lt;mat-list-item style&#x3D;&quot;background-color:#2196F3&quot; matTooltip&#x3D;&quot;Compose&quot; matTooltipPosition&#x3D;&quot;right&quot;&gt;
+            &lt;fa-icon mat-list-icon [icon]&#x3D;&quot;faEdit&quot; class&#x3D;&quot;animate__animated animate__zoomIn animate__faster&quot;&gt;&lt;/fa-icon&gt;
+            &lt;div mat-line&gt;Compose&lt;/div&gt;
+            
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item  matTooltip&#x3D;&quot;Inbox&quot; matTooltipPosition&#x3D;&quot;right&quot; folder&#x3D;&quot;inbox&quot;&gt;
+            &lt;fa-icon mat-list-icon [icon]&#x3D;&quot;faInbox&quot; [ngClass] &#x3D;&quot;{selected: selectedFolder &#x3D;&#x3D;&#x3D; &#x27;inbox&#x27;}&quot; class&#x3D;&quot;animate__animated animate__zoomIn animate__faster&quot;&gt;&lt;/fa-icon&gt;
+            &lt;div mat-line&gt;Inbox&lt;/div&gt;
+            &lt;div class&#x3D;&quot;counter-bubble animate__animated animate__zoomIn animate__faster&quot; *ngIf&#x3D;&quot;inboxCounter &gt; 0&quot;&gt;
+                {{inboxCounter}}
+            &lt;/div&gt;
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item matTooltip&#x3D;&quot;Sent&quot; matTooltipPosition&#x3D;&quot;right&quot; folder&#x3D;&quot;sent&quot;&gt;
+            &lt;fa-icon mat-list-icon [icon]&#x3D;&quot;faPaperPlane&quot; [ngClass] &#x3D;&quot;{selected: selectedFolder &#x3D;&#x3D;&#x3D; &#x27;sent&#x27;}&quot; class&#x3D;&quot;animate__animated animate__zoomIn animate__faster&quot;&gt;&lt;/fa-icon&gt;
+            &lt;div mat-line&gt;Sent&lt;/div&gt;
+            &lt;div class&#x3D;&quot;counter-bubble animate__animated animate__zoomIn animate__faster&quot; *ngIf&#x3D;&quot;sentCounter &gt; 0&quot;&gt;
+                {{sentCounter}}
+            &lt;/div&gt;
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item matTooltip&#x3D;&quot;Draft&quot; matTooltipPosition&#x3D;&quot;right&quot; folder&#x3D;&quot;draft&quot;&gt;
+            &lt;fa-icon mat-list-icon [icon]&#x3D;&quot;faFile&quot; [ngClass] &#x3D;&quot;{selected: selectedFolder &#x3D;&#x3D;&#x3D; &#x27;draft&#x27;}&quot; class&#x3D;&quot;animate__animated animate__zoomIn animate__faster&quot;&gt;&lt;/fa-icon&gt;
+            &lt;div mat-line&gt;Draft&lt;/div&gt;
+            &lt;div class&#x3D;&quot;counter-bubble animate__animated animate__zoomIn animate__faster&quot; *ngIf&#x3D;&quot;draftCounter &gt; 0&quot;&gt;
+                {{draftCounter}}
+            &lt;/div&gt;
+        &lt;/mat-list-item&gt;
+        &lt;mat-list-item matTooltip&#x3D;&quot;Trash&quot; matTooltipPosition&#x3D;&quot;right&quot; folder&#x3D;&quot;trashed&quot;&gt;
+            &lt;fa-icon mat-list-icon [icon]&#x3D;&quot;faTrash&quot; [ngClass] &#x3D;&quot;{selected: selectedFolder &#x3D;&#x3D;&#x3D; &#x27;trashed&#x27;}&quot; class&#x3D;&quot;animate__animated animate__zoomIn animate__faster&quot;&gt;&lt;/fa-icon&gt;
+            &lt;div mat-line&gt;Trash&lt;/div&gt;
+            &lt;div class&#x3D;&quot;counter-bubble animate__animated animate__zoomIn animate__faster&quot; *ngIf&#x3D;&quot;trashedCounter &gt; 0&quot;&gt;
+                {{trashedCounter}}
+            &lt;/div&gt;
+        &lt;/mat-list-item&gt;
+    &lt;/mat-nav-list&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./sidebar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.sidebar{
+    background-color: rgb(53,54,58);
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6);
+    position: relative;
+
+    &amp; fa-icon{
+        color: #f5f5f5;
+        font-size: 21px;      
+        cursor: pointer;          
+    }
+
+    &amp; .bottom-list{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;                
+    }
+
+    .selected{
+        color: #2196F3;
+    }
+
+    &amp; fa-icon{
+        transition: all 0.2s ease-in-out;
+    }
+
+    .counter-bubble{
+        border-radius: 50%; 
+        width: 25px; 
+        height: 25px;
+        background-color: #F44336;
+        color: #f5f5f5;
+        line-height: 1.6;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 1024px){
+        .counter-bubble{
+            display: none !important;
+        }
+    }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="sidebar">    <mat-nav-list>        <mat-list-item style="background-color:#2196F3" matTooltip="Compose" matTooltipPosition="right">            <fa-icon mat-list-icon [icon]="faEdit" class="animate__animated animate__zoomIn animate__faster"></fa-icon>            <div mat-line>Compose</div>                    </mat-list-item>        <mat-list-item  matTooltip="Inbox" matTooltipPosition="right" folder="inbox">            <fa-icon mat-list-icon [icon]="faInbox" [ngClass] ="{selected: selectedFolder === \'inbox\'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>            <div mat-line>Inbox</div>            <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="inboxCounter > 0">                {{inboxCounter}}            </div>        </mat-list-item>        <mat-list-item matTooltip="Sent" matTooltipPosition="right" folder="sent">            <fa-icon mat-list-icon [icon]="faPaperPlane" [ngClass] ="{selected: selectedFolder === \'sent\'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>            <div mat-line>Sent</div>            <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="sentCounter > 0">                {{sentCounter}}            </div>        </mat-list-item>        <mat-list-item matTooltip="Draft" matTooltipPosition="right" folder="draft">            <fa-icon mat-list-icon [icon]="faFile" [ngClass] ="{selected: selectedFolder === \'draft\'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>            <div mat-line>Draft</div>            <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="draftCounter > 0">                {{draftCounter}}            </div>        </mat-list-item>        <mat-list-item matTooltip="Trash" matTooltipPosition="right" folder="trashed">            <fa-icon mat-list-icon [icon]="faTrash" [ngClass] ="{selected: selectedFolder === \'trashed\'}" class="animate__animated animate__zoomIn animate__faster"></fa-icon>            <div mat-line>Trash</div>            <div class="counter-bubble animate__animated animate__zoomIn animate__faster" *ngIf="trashedCounter > 0">                {{trashedCounter}}            </div>        </mat-list-item>    </mat-nav-list></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'MailListComponent', 'selector': 'mail-list'},{'name': 'MailPreviewComponent', 'selector': 'mail-preview'},{'name': 'SidebarComponent', 'selector': 'sidebar'}];
+    var DIRECTIVES = [{'name': 'FolderSelectorDirective', 'selector': '[folder]'},{'name': 'MailSelectorDirective', 'selector': '[mail-select]'}];
+    var ACTUAL_COMPONENT = {'name': 'SidebarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SidebarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
