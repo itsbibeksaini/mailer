@@ -11,16 +11,12 @@ import { Mail } from '../../models';
 export class MailSelectorDirective {
 
   @Input('mail-select') selectedMail!: string;
-  constructor(private mailPreviewStore: MailPreviewStore, private mailPreviewQuery: MailPreviewQuery) { }
+  constructor(private mailPreviewStore: MailPreviewStore) { }
 
   @HostListener('click') onClick(){
-    this.mailPreviewQuery.select(state => {
-      let mail = state.selectedFolder.find(x => x.ID === this.selectedMail)
+    
+    this.mailPreviewStore.selectMail(this.selectedMail)
 
-      if(mail !== undefined)
-        this.mailPreviewStore.update({selectedMail: mail})
-      
-    }).subscribe().unsubscribe()
   }
   
 }

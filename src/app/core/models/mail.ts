@@ -41,6 +41,14 @@ export class Mail{
     public set IS_READED(v : boolean) {
         this._IS_READED = v;
     }
+        
+    private _IS_SELECTED : boolean = false;
+    public get IS_SELECTED() : boolean {
+        return this._IS_SELECTED;
+    }
+    public set IS_SELECTED(v : boolean) {
+        this._IS_SELECTED = v;
+    }
     
     private _IS_DELETED! : string;
     public get IS_DELETED() : string {
@@ -49,7 +57,6 @@ export class Mail{
     public set IS_DELETED(v : string) {
         this._IS_DELETED = v;
     }
-    
     
     private _CONTENT! : MailContent;
     public get CONTENT() : MailContent {

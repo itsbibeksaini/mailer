@@ -9,6 +9,14 @@
         top:50%;left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    & .selected{
+        background-color: #90CAF9;
+
+        & .mail-item-image{
+            background-color: #f5f5f5;
+        }
+    }
 }
 
 ul{
@@ -17,7 +25,7 @@ ul{
 ul li{
     list-style-type: none;
     padding: 0 12px;
-    cursor: pointer;
+    cursor: pointer;    
 
     & .mail-item-image{
         height: 40px;

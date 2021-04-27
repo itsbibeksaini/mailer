@@ -18,7 +18,7 @@ export class MailPreviewComponent implements OnInit {
   ngOnInit(): void {
     this.mailPreviewQuery.select(state => {
       let mail = state.selectedMail
-      if(mail.ID !== undefined){
+      if(mail !== undefined && mail.ID !== undefined){
         this.selectedMail = mail
         this.hasSelectedMail = true
       }
