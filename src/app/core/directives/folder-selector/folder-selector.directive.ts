@@ -18,8 +18,15 @@ export class FolderSelectorDirective {
   @HostListener('click') openFolder(){    
     this.mailQuery.getFolderMails(this.folder).subscribe(res => {
       this.mailPreviewStore.update(state => {
+
+        let readOnlyMail:Mail = new Mail()
+        let listMail = res.find(x => x.IS_SELECTED);
+        if(listMail !== undefined)
+          readOnlyMail = listMail
+        
         return{
-           selectedMail: new Mail(),
+          ...state,
+           selectedMail: readOnlyMail,
            selectedFolder: res
         }
       })

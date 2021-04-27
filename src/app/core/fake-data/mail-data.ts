@@ -5,7 +5,7 @@ import { Mail, MailContent } from '../models';
 
 function generateFakeMailData(counter:number,isReaded:boolean): Mail[]{
     let MAILS: Mail[] = []
-    for (let index = 0; index < counter; index++) {
+    for (let index = 1; index <= counter; index++) {
         let mail: Mail = new Mail()
         mail.ID = index + ""
         mail.SENDER = "Dribbble"

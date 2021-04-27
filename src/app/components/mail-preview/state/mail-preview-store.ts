@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Store, StoreConfig } from "@datorama/akita";
 import { Mail } from "src/app/core/models";
+import { MailStoreService } from "../../sidebar/state/mail-store/mail-store.service";
 import { defaultMailPreview, MailPreviewState } from "./mail-preview-state";
 
 @Injectable({
@@ -9,7 +10,7 @@ import { defaultMailPreview, MailPreviewState } from "./mail-preview-state";
   
 @StoreConfig({name: "mail-preview"})
 export class MailPreviewStore extends Store<MailPreviewState>{
-    constructor() { 
+    constructor(private mailStore:MailStoreService) { 
         super(defaultMailPreview())
     }
 
@@ -28,7 +29,9 @@ export class MailPreviewStore extends Store<MailPreviewState>{
               folder[index] = editableMail
               
             }
-      
+    
+            this.updateMailStore(folder)
+    
             return{
               ...state,
               selectedFolder:folder,
@@ -73,5 +76,34 @@ export class MailPreviewStore extends Store<MailPreviewState>{
                 selectedMail: editableMail,
                 selectedFolder: folder
             }
+    }
+
+    updateMailStore(folder:Mail[]){
+        this.mailStore.update(mailState =>{
+            if(mailState.selectedFolder === 'inbox')
+                return{
+                    ...mailState,
+                    inboxMails: folder
+                }
+            else if(mailState.selectedFolder === 'sent')
+                return{
+                    ...mailState,
+                    sentMails: folder
+                }
+            else if(mailState.selectedFolder === 'draft')
+                return{
+                    ...mailState,
+                    draftMails: folder
+                }
+            else if(mailState.selectedFolder === 'trashed')
+                return{
+                    ...mailState,
+                    trashedMails: folder
+                }
+            else
+                return{
+                    ...mailState,                    
+                }
+        })
     }
 }
