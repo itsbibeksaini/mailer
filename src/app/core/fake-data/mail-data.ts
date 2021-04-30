@@ -12,6 +12,7 @@ function generateFakeMailData(counter:number,isReaded:boolean): Mail[]{
         mail.SUBJECT = "Test mail"
         mail.IS_READED = isReaded
         mail.DATE = new Date()
+        mail.INITIALS = "D"
 
         let mailContent:MailContent = new MailContent()
         mailContent.CONTENT = "Test mail " + index

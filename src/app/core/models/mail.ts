@@ -66,4 +66,12 @@ export class Mail{
         this._CONTENT = v;
     }
     
+    private _INITIALS! : string;
+    public get INITIALS() : string {
+        return this._INITIALS;
+    }
+    public set INITIALS(v : string) {
+        this._INITIALS = v;
+    }
+    
 }

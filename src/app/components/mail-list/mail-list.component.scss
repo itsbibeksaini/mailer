@@ -1,3 +1,5 @@
+@import '../../../mixins';
+
 .mail-list{
     overflow: hidden;
     overflow-y: auto;
@@ -39,5 +41,9 @@ ul li{
         left: 0;
         right: 0;
         margin: auto;
+        text-align: center;
+        & .initials{
+            @include initials(40px);            
+        }
     }
 }
