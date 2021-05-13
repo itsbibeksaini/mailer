@@ -25,7 +25,7 @@
     "@angular/router": "11.2.13",
     "@compodoc/compodoc": "1.1.11",
     "@datorama/akita": "5.3.0",
-    "@fortawesome/angular-fontawesome": "0.8.2",
+    "@fortawesome/angular-fontawesome": "0.9.0",
     "@fortawesome/fontawesome-svg-core": "1.2.35",
     "@fortawesome/free-brands-svg-icons": "5.15.3",
     "@fortawesome/free-regular-svg-icons": "5.15.3",
